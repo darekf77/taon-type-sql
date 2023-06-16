@@ -1,21 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "target": "ES6",
-        "declaration": true,
-        "outDir": "dist/",
-        "rootDir": "src/"
-    },
-    "exclude": [
-        "node_modules",
-        "test",
-        "dist",
-        "build",
-        "build-test"
-    ]
+  "extends": "./tsconfig.isomorphic.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "paths": {}
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/assets"
+  ]
 }

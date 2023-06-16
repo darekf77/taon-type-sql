@@ -1,5 +1,11 @@
-node_modules
-build-test
-.idea
-npm-debug.log
 .vscode
+dist/
+src/
+/docs
+/preview
+/tests
+tsconfig.json
+npm-debug.log*
+.npmrc
+tslint.json
+.editorconfig
