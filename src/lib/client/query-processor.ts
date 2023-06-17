@@ -1,11 +1,13 @@
-import debug = require('debug');
+import { Log, Level } from 'ng2-logger';
 import { convertQueryToParameterizedSQL } from '../converter/parameterized-converter';
 import { convertQueryToSQL } from '../converter/sql-converter';
 import { convertResult } from "../converter/result-converter";
 import { QueryEngine, ConverterOptions } from '../converter/types';
 import { QueryProcessor } from '../builder/helpers/internal-types';
 
-const log = debug('type-sql');
+const log = Log.create('query processor',
+  // Level.__NOTHING
+)
 
 export interface QueryProcessorOptions {
   lineBreaks?: boolean,
@@ -45,7 +47,7 @@ export function createQueryProcessor(client: any, _options: QueryProcessorOption
   };
 
   function processSql(query: any, sql: string, params: any[] | undefined, callback: any): Promise<any> {
-    if (options.logging) log(sql);
+    if (options.logging) log.i(sql);
     if (options.logger) options.logger(sql, params);
 
     return new Promise((resolve, reject) => {
