@@ -2,6 +2,10 @@ import { Firedev } from 'firedev';
 import { User } from './user';
 import { _ } from 'tnp-core';
 import { randUserName } from '@ngneat/falso';
+import { MySqlQuerySource } from '../../../lib';
+//#region @websql
+import { USER } from './user.models';
+//#endregion
 
 @Firedev.Controller({
   className: 'UserController',
@@ -14,6 +18,44 @@ export class UserController extends Firedev.Base.Controller<any> {
     return async () => {
       return 'Hello world';
     }
+  }
+
+  @Firedev.Http.GET()
+  getSpecyficThings(): Firedev.Response<any> {
+    //#region @websqlFunc
+    return async () => {
+      // const result = await this.connection.query('SELECT COUNT(1) AS "cnt" FROM "user" "User"')
+      // const result = await this.connection.query('SELECT * FROM "user" "User"')
+      const db = new MySqlQuerySource(this.connection, {
+        logging: true,
+      });
+
+      let result = await db.from(USER)
+        .where(USER.id.gt(3))
+        .select(USER.$all)
+
+      // .limit(10)
+      // .select(USER.name)
+
+      console.log({
+        result
+      })
+
+      // .where(BOOK.author.lower().like('%john%')
+      //   .and(BOOK.price.lt(10).or(BOOK.available.eq(true)))
+      //   .and(BOOK.date.gte(new Date('2016-10-23T19:11:25.342Z'))))
+      // .groupBy(BOOK.author, BOOK.available)
+      // .having(BOOK.price.sum().between(1000, 2000))
+      // .orderBy(BOOK.author.asc().nullsFirst(), BOOK.price.sum().desc())
+      // .offset(20)
+      // .limit(10)
+      // .where(USER.$all)
+      // .select(BOOK.author, BOOK.available, BOOK.price.sum().as('sum_price'));
+
+
+      return null;
+    }
+    //#endregion
   }
 
   @Firedev.Http.GET(`/${Firedev.symbols.CRUD_TABLE_MODELS}`) // @ts-ignore

@@ -10,7 +10,7 @@ import { User } from '../../shared/user';
 })
 export class AdminUsersContainer implements OnInit {
 
-  @Input() User = User;
+  User = User;
   users$ = this.User.ctrl.getAll().received.observable.pipe(map(data => {
     return data.body.json;
   }))
@@ -24,9 +24,12 @@ export class AdminUsersContainer implements OnInit {
     this.myId = Number(v);
   }
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
+  }
+
+  async ngOnInit() {
+    await this.User.ctrl.getSpecyficThings().received;
   }
 
 }

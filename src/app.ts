@@ -79,6 +79,8 @@ async function start() {
     }
     //#endregion
   });
+
+
   //#region @backend
   if (Firedev.isNode) {
     context.node.app.get('/hello', (req, res) => {

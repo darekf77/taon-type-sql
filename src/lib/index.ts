@@ -33,3 +33,6 @@ export { default as MySqlQuerySource } from './client/mysql';
 export { default as PgQuerySource } from './client/pg';
 
 export { QueryProcessorOptions } from './client/query-processor';
+
+
+export type PropsEntitySQL<IEntityType> = { [prop in keyof Required<IEntityType>]: any; }
