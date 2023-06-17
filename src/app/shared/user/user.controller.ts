@@ -4,7 +4,7 @@ import { _ } from 'tnp-core';
 import { randUserName } from '@ngneat/falso';
 import { MySqlQuerySource } from '../../../lib';
 //#region @websql
-import { USER } from './user.models';
+import { USER, UserTable } from './user.models';
 //#endregion
 
 @Firedev.Controller({
@@ -26,20 +26,21 @@ export class UserController extends Firedev.Base.Controller<any> {
     return async () => {
       // const result = await this.connection.query('SELECT COUNT(1) AS "cnt" FROM "user" "User"')
       // const result = await this.connection.query('SELECT * FROM "user" "User"')
-      const db = new MySqlQuerySource(this.connection, {
-        logging: true,
-      });
 
-      let result = await db.from(USER)
-        .where(USER.id.gt(3))
-        .select(USER.$all)
+      // const db = new MySqlQuerySource(this.connection, {
+      //   logging: true,
+      // });
 
-      // .limit(10)
-      // .select(USER.name)
+      // let result = await db.from(USER)
+      //   .where(USER.id.gt(3))
+      //   .select<User>(USER.$all)
 
-      console.log({
-        result
-      })
+      // // .limit(10)
+      // // .select(USER.name)
+
+      // console.log({
+      //   result
+      // })
 
       // .where(BOOK.author.lower().like('%john%')
       //   .and(BOOK.price.lt(10).or(BOOK.available.eq(true)))
