@@ -7,7 +7,7 @@
     "ignoreDepsPattern": [],
     "npmFixes": [],
     "includeAsDev": [],
-    "includeOnly": [],
+    "includeOnly": ['tnp-core'],
     "dependencies": {}
   },
   "linkedProjects": [],

@@ -30,7 +30,7 @@ export { default as QueryTable } from './builder/query-table';
 // Client:
 
 export { default as MySqlQuerySource } from './client/mysql';
-export { default as PgQuerySource } from './client/pg';
+// export { default as PgQuerySource } from './client/pg';
 
 export { QueryProcessorOptions } from './client/query-processor';
 
