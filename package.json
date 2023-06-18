@@ -155,7 +155,7 @@
     "firedev-crud-deamon": "~16.0.43",
     "firedev-ports": "~16.0.48",
     "firedev-storage": "~16.0.40",
-    "firedev-type-sql": "~16.0.0",
+    "firedev-type-sql": "~16.0.1",
     "firedev-typeorm": "~16.0.37",
     "firedev-ui": "~16.0.7",
     "fkill": "6.1.0",
@@ -283,5 +283,6 @@
     "watch": "1.0.2",
     "yup": "1.1.1",
     "zone.js": "~0.13.0"
-  }
+  },
+  "lastBuildTagHash": "330cb6f42af03eed4d419c10dc67c0bd5d314ae1"
 }
