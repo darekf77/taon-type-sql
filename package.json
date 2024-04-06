@@ -23,7 +23,8 @@
       "includeNodeModules": false,
       "cliBuildNoDts": false,
       "cliBuildObscure": false,
-      "cliBuildIncludeNodeModules": false
+      "cliBuildIncludeNodeModules": false,
+      "cliBuildUglify": false
     }
   },
   "name": "firedev-type-sql",
@@ -313,5 +314,6 @@
     "yup": "1.1.1",
     "zone.js": "~0.13.0"
   },
-  "lastBuildTagHash": "02d30c72cd57f88ef15df49d3da8c26cc6aad1af"
+  "lastBuildTagHash": "02d30c72cd57f88ef15df49d3da8c26cc6aad1af",
+  "main": "dist/app.electron.js"
 }
