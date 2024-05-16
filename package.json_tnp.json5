@@ -2,6 +2,7 @@
   "resources": [],
   "type": "isomorphic-lib",
   "version": "v4",
+
   "overrided": {
     "linkedFolders": [],
     "ignoreDepsPattern": [],
@@ -10,9 +11,10 @@
     "includeOnly": ['tnp-core'],
     "dependencies": {}
   },
-  "linkedProjects": [],
+
   "smartContainerBuildTarget": "",
   "linkedRepos": [],
+
   "libReleaseOptions": {
     "nodts": false,
     "obscure": false,
@@ -22,5 +24,5 @@
     'cliBuildObscure': false,
     'cliBuildIncludeNodeModules': false,
     'cliBuildUglify': false,
-  }
+  },
 }
