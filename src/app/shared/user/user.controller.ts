@@ -9,9 +9,12 @@ import { USER, UserTable } from './user.models';
 
 @Firedev.Controller({
   className: 'UserController',
-  entity: User
+
 })
-export class UserController extends Firedev.Base.Controller<any> {
+export class UserController extends Firedev.Base.CrudController<any> {
+  entity() {
+    return User;
+  }
 
   @Firedev.Http.GET()
   hello(): Firedev.Response<string> {

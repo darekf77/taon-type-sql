@@ -7,20 +7,17 @@
     "ignoreDepsPattern": [],
     "npmFixes": [],
     "includeAsDev": [],
-    "includeOnly": ['tnp-core'],
+    "includeOnly": [
+      "tnp-core"
+    ],
     "dependencies": {}
   },
-  "linkedProjects": [],
   "smartContainerBuildTarget": "",
   "linkedRepos": [],
   "libReleaseOptions": {
-    "nodts": false,
-    "obscure": false,
-    "ugly": false,
-    "includeNodeModules": false,
-    'cliBuildNoDts': false,
-    'cliBuildObscure': false,
-    'cliBuildIncludeNodeModules': false,
-    'cliBuildUglify': false,
+    "cliBuildNoDts": false,
+    "cliBuildObscure": false,
+    "cliBuildUglify": false,
+    "cliBuildIncludeNodeModules": false
   }
 }

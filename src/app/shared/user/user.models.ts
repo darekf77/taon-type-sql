@@ -22,6 +22,7 @@ export const defaultModelValuesUser: Omit<IUser, UserNonColumnsKeys> = {
 //#region @websql
 export type IUserTable = PropsEntitySQL<typeof defaultModelValuesUser>;
 
+// @ts-ignore
 export class UserTable extends QueryTable<User, number> implements IUserTable {
   id = new NumberColumn(this, 'id');
   name = new StringColumn(this, 'name');

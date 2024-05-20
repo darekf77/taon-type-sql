@@ -9,7 +9,7 @@ import {
   className: 'User',
   defaultModelValues
 })
-export class User extends Firedev.Base.Entity<any> {
+export class User extends Firedev.Base.Entity {
 
   //#region static
   static ctrl: UserController;
