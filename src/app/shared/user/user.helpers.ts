@@ -1,9 +1,9 @@
-//#region @browser
-export namespace UserHelpers {
+// //#region @browser
+// export namespace UserHelpers {
 
-  export function helloWorldUser() {
+//   export function helloWorldUser() {
 
-  }
+//   }
 
-}
-//#endregion
+// }
+// //#endregion
