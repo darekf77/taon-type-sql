@@ -23,7 +23,7 @@
     }
   },
   "name": "firedev-type-sql",
-  "version": "16.444.1",
+  "version": "16.444.2",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
