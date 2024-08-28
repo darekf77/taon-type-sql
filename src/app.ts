@@ -1,5 +1,5 @@
 // //#region imports
-// import { Firedev } from 'firedev';
+// import { Taon } from 'taon';
 // const host = 'http://localhost:4199';
 // import { User, UserController } from './app/shared/user';
 // //#region @browser
@@ -25,12 +25,12 @@
 
 // //#region main component
 // @Component({
-//   selector: 'app-firedev-type-sql',
+//   selector: 'app-taon-type-sql',
 //   encapsulation: ViewEncapsulation.None,
 //   styleUrls: ['./app.scss'],
 //   templateUrl: './app.html',
 // })
-// export class FiredevTypeSqlComponent implements OnInit {
+// export class TaonTypeSqlComponent implements OnInit {
 //   async ngOnInit() {
 
 //   }
@@ -48,20 +48,20 @@
 //       bindToComponentInputs: true
 //     }),
 //   ],
-//   exports: [FiredevTypeSqlComponent],
-//   declarations: [FiredevTypeSqlComponent],
+//   exports: [TaonTypeSqlComponent],
+//   declarations: [TaonTypeSqlComponent],
 //   providers: [],
 // })
-// export class FiredevTypeSqlModule { }
+// export class TaonTypeSqlModule { }
 // //#endregion
 
 // //#endregion
 
-// //#region firedev start function
+// //#region taon start function
 // async function start() {
-//   // Firedev.enableProductionMode();
+//   // Taon.enableProductionMode();
 
-//   const context = await Firedev.init({
+//   const context = await Taon.init({
 //     host,
 //     controllers: [
 //       UserController,
@@ -82,9 +82,9 @@
 
 
 //   //#region @backend
-//   if (Firedev.isNode) {
+//   if (Taon.isNode) {
 //     context.node.app.get('/hello', (req, res) => {
-//       res.send('Hello firedev-type-sql')
+//       res.send('Hello taon-type-sql')
 //     })
 //   }
 //   //#endregion

@@ -1,7 +1,7 @@
 // //#region @browser
 // import { Component, Input, OnInit } from '@angular/core';
 // import { CommonModule } from '@angular/common';
-// import { FiredevFullMaterialModule } from 'firedev-ui';
+// import { TaonFullMaterialModule } from 'taon-ui';
 // import { StaticColumnsModule } from 'static-columns';
 // import { UserHelpers } from './user.helpers';
 // import { User } from './user';
@@ -13,7 +13,7 @@
 //   standalone: true,
 //   imports: [
 //     CommonModule,
-//     // FiredevFullMaterialModule,
+//     // TaonFullMaterialModule,
 //     // StaticColumnsModule,
 //   ],
 // })

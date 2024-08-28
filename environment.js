@@ -4,13 +4,12 @@ const path = require('path')
 
     config = {
 
-      domain: 'firedev-type-sql.example.domain.com',
+      domain: 'taon-type-sql.example.domain.com',
       useDomain: false,
-      title: 'Firedev Type Sql',
+      title: 'Taon Type Sql',
       pwa: {
         // start_url: ''
       }
 
     }
     module.exports = exports = { config };
-    

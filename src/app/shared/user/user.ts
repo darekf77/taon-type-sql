@@ -1,15 +1,15 @@
-// import { Firedev } from 'firedev';
+// import { Taon } from 'taon';
 // import { _ } from 'tnp-core';
 // import type { UserController } from './user.controller';
 // import {
 //   UserNonColumnsKeys, UserNonColumnsKeysArr,
 //   defaultModelValuesUser as defaultModelValues
 // } from './user.models';
-// @Firedev.Entity({
+// @Taon.Entity({
 //   className: 'User',
 //   defaultModelValues
 // })
-// export class User extends Firedev.Base.Entity {
+// export class User extends Taon.Base.Entity {
 
 //   //#region static
 //   static ctrl: UserController;
@@ -35,12 +35,12 @@
 //   ctrl: UserController;
 
 //   //#region @websql
-//   @Firedev.Orm.Column.Generated()
+//   @Taon.Orm.Column.Generated()
 //   //#endregion
 //   id: string;
 
 //   //#region @websql
-//   @Firedev.Orm.Column.Custom({
+//   @Taon.Orm.Column.Custom({
 //     type: 'varchar',
 //     length: 100,
 //     default: defaultModelValues.name

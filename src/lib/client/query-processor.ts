@@ -1,10 +1,10 @@
-import { Log, Level } from 'ng2-logger';
+import { Log, Level } from 'ng2-logger/src';
 import { convertQueryToParameterizedSQL } from '../converter/parameterized-converter';
 import { convertQueryToSQL } from '../converter/sql-converter';
 import { convertResult } from "../converter/result-converter";
 import { QueryEngine, ConverterOptions } from '../converter/types';
 import { QueryProcessor } from '../builder/helpers/internal-types';
-import { Helpers } from 'tnp-core';
+import { Helpers } from 'tnp-core/src';
 
 const log = Log.create('query processor',
   // Level.__NOTHING

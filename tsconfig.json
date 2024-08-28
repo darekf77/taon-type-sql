@@ -4,10 +4,10 @@
     "strictNullChecks": false,
     "rootDir": "./src",
     "paths": {
-      "firedev-type-sql": [
+      "taon-type-sql": [
         "./src/lib"
       ],
-      "firedev-type-sql/*": [
+      "taon-type-sql/*": [
         "./src/lib/*"
       ]
     }

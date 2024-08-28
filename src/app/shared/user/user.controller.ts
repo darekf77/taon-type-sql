@@ -1,4 +1,4 @@
-// import { Firedev } from 'firedev';
+// import { Taon } from 'taon';
 // import { User } from './user';
 // import { _ } from 'tnp-core';
 // import { randUserName } from '@ngneat/falso';
@@ -7,24 +7,24 @@
 // import { USER, UserTable } from './user.models';
 // //#endregion
 
-// @Firedev.Controller({
+// @Taon.Controller({
 //   className: 'UserController',
 
 // })
-// export class UserController extends Firedev.Base.CrudController<any> {
+// export class UserController extends Taon.Base.CrudController<any> {
 //   entity() {
 //     return User;
 //   }
 
-//   @Firedev.Http.GET()
-//   hello(): Firedev.Response<string> {
+//   @Taon.Http.GET()
+//   hello(): Taon.Response<string> {
 //     return async () => {
 //       return 'Hello world';
 //     }
 //   }
 
-//   @Firedev.Http.GET()
-//   getSpecyficThings(): Firedev.Response<any> {
+//   @Taon.Http.GET()
+//   getSpecyficThings(): Taon.Response<any> {
 //     //#region @websqlFunc
 //     return async () => {
 //       // const result = await this.connection.query('SELECT COUNT(1) AS "cnt" FROM "user" "User"')
@@ -62,12 +62,12 @@
 //     //#endregion
 //   }
 
-//   @Firedev.Http.GET(`/${Firedev.symbols.CRUD_TABLE_MODELS}`) // @ts-ignore
-//   getAll(@Firedev.Http.Param.Query('limit') limit = Infinity): Firedev.Response<User[]> {
+//   @Taon.Http.GET(`/${Taon.symbols.CRUD_TABLE_MODELS}`) // @ts-ignore
+//   getAll(@Taon.Http.Param.Query('limit') limit = Infinity): Taon.Response<User[]> {
 //     //#region @websqlFunc
 //     const config = super.getAll();
 //     return async (req, res) => { // @ts-ignore
-//       let arr = await Firedev.getResponseValue(config, req, res) as User[];
+//       let arr = await Taon.getResponseValue(config, req, res) as User[];
 //       if (arr.length > limit) {
 //         arr = arr.slice(0, limit - 1);
 //       }
