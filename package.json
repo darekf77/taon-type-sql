@@ -23,7 +23,7 @@
     }
   },
   "name": "taon-type-sql",
-  "version": "18.0.10",
+  "version": "18.0.11",
   "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
