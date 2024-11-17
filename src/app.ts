@@ -80,7 +80,6 @@
 //     //#endregion
 //   });
 
-
 //   //#region @backend
 //   if (Taon.isNode) {
 //     context.node.app.get('/hello', (req, res) => {
@@ -92,3 +91,21 @@
 // //#endregion
 
 // export default start;
+
+//#region  taon-type-sql component
+//#region @browser
+@Component({ template: 'hello world fromr taon-type-sql' })
+export class TaonTypeSqlComponent {}
+//#endregion
+//#endregion
+
+//#region  taon-type-sql module
+//#region @browser
+@NgModule({
+  declarations: [TaonTypeSqlComponent],
+  imports: [CommonModule],
+  exports: [TaonTypeSqlComponent],
+})
+export class TaonTypeSqlModule {}
+//#endregion
+//#endregion
