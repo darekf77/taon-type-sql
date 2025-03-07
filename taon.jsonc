@@ -2,6 +2,7 @@
   "resources": [],
   "type": "isomorphic-lib",
   "version": "v18",
+
   "overrided": {
     "linkedFolders": [],
     "ignoreDepsPattern": [],
@@ -12,12 +13,16 @@
     ],
     "dependencies": {}
   },
+
   "smartContainerBuildTarget": "",
   "linkedRepos": [],
+
   "libReleaseOptions": {
     "cliBuildNoDts": false,
     "cliBuildObscure": false,
     "cliBuildUglify": false,
     "cliBuildIncludeNodeModules": false
-  }
+  },
+
+  "packageJsonOverride": {}
 }

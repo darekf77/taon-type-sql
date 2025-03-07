@@ -20,7 +20,8 @@
       "cliBuildObscure": false,
       "cliBuildUglify": false,
       "cliBuildIncludeNodeModules": false
-    }
+    },
+    "packageJsonOverride": {}
   },
   "name": "taon-type-sql",
   "version": "18.0.20",
