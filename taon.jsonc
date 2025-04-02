@@ -1,28 +1,13 @@
 {
-  "resources": [],
   "type": "isomorphic-lib",
   "version": "v18",
+  "dependenciesNamesForNpmLib": ["tnp-core"],
+  "resources": [],
 
-  "overrided": {
-    "linkedFolders": [],
-    "ignoreDepsPattern": [],
-    "npmFixes": [],
-    "includeAsDev": [],
-    "includeOnly": [
-      "tnp-core"
-    ],
-    "dependencies": {}
-  },
-
-  "smartContainerBuildTarget": "",
-  "linkedRepos": [],
-
-  "libReleaseOptions": {
-    "cliBuildNoDts": false,
-    "cliBuildObscure": false,
-    "cliBuildUglify": false,
-    "cliBuildIncludeNodeModules": false
-  },
-
-  "packageJsonOverride": {}
+  "packageJsonOverride": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ggmod/type-sql.git"
+    }
+  }
 }
