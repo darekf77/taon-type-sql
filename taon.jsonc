@@ -10,6 +10,8 @@
   "resources": [],
 
   "packageJsonOverride": {
+    "author": "Dariusz Filipiak",
+
     "repository": {
       "type": "git",
       "url": "https://github.com/ggmod/type-sql.git"
