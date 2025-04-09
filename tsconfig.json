@@ -1,10 +1,16 @@
 {
   "extends": "./tsconfig.isomorphic.json",
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
     "strictNullChecks": false,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "taon-type-sql": [
+        "./src/lib"
+      ],
+      "taon-type-sql/*": [
+        "./src/lib/*"
+      ]
+    }
   },
   "include": [
     "src/**/*"
