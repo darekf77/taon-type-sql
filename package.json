@@ -1,6 +1,6 @@
 {
   "name": "taon-type-sql",
-  "version": "18.0.25",
+  "version": "18.0.26",
   "author": "Dariusz Filipiak",
   "dependencies": {
     "@angular-builders/custom-webpack": "~18.0.0",
