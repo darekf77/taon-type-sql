@@ -4,10 +4,16 @@
     "strictNullChecks": false,
     "rootDir": "./src",
     "paths": {
-      "taon-type-sql": [
+      "@lib": [
         "./src/lib"
       ],
-      "taon-type-sql/*": [
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "taon-type-sql/src": [
+        "./src/lib"
+      ],
+      "taon-type-sql/src/*": [
         "./src/lib/*"
       ]
     }
