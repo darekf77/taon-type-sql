@@ -2,6 +2,7 @@
   "type": "isomorphic-lib",
   "version": "v19",
   "dependenciesNamesForNpmLib": ["tnp-core"],
+  "appId": "com.domain.example.taon-type-sql",
 
   "autoReleaseConfigAllowedItems": [{
     "artifactName": "npm-lib-and-cli-tool"
@@ -17,6 +18,7 @@
       "url": "https://github.com/ggmod/type-sql.git"
     },
 
-    "scripts": {}
+    "scripts": {},
+    "description": "Description for taon-type-sql. Hello world!"
   }
 }
