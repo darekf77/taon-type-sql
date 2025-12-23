@@ -1,3 +1,4 @@
+// @ts-nocheck
 // //#region imports
 // import { Taon } from 'taon';
 // const host = 'http://localhost:4199';
