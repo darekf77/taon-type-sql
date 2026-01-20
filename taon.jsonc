@@ -1,14 +1,18 @@
 {
   "type": "isomorphic-lib",
   "version": "v21",
-  "dependenciesNamesForNpmLib": ["tnp-core"],
+  "dependenciesNamesForNpmLib": [],
   "appId": "com.domain.example.taon-type-sql",
 
-  "autoReleaseConfigAllowedItems": [{
-    "artifactName": "npm-lib-and-cli-tool",
-    "taskName": "npm"
-  }],
+  "autoReleaseConfigAllowedItems": [
+    {
+      "artifactName": "npm-lib-and-cli-tool",
+      "taskName": "npm",
+    },
+  ],
 
+  "isomorphicDependenciesForNpmLib": ["ng2-logger", "tnp-core"],
+  "peerDependenciesNamesForNpmLib": [],
   "resources": [],
 
   "packageJsonOverride": {
@@ -18,8 +22,8 @@
 
     "repository": {
       "type": "git",
-      "url": "https://github.com/ggmod/type-sql.git"
+      "url": "https://github.com/ggmod/type-sql.git",
     },
-    "scripts": {}
-  }
+    "scripts": {},
+  },
 }
