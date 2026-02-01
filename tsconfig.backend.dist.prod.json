@@ -2,7 +2,12 @@
   "extends": "./tsconfig.isomorphic.json",
   "compilerOptions": {
     "rootDir": "./tmp-source-dist-prod",
-    "outDir": "dist-prod"
+    "outDir": "dist-prod",
+    "module": "commonjs",
+    "target": "es2022",
+    "noEmitHelpers": true,
+    "importHelpers": false,
+    "importsNotUsedAsValues": "remove"
   },
   "include": [
     "tmp-source-dist-prod/**/*"
